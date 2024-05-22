@@ -1,0 +1,37 @@
+.sig{
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: chocolate;
+    margin-left: 10px;
+}
+
+.sig a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.logo{
+    width: 50px;
+}
+
+.imad{
+    width: 100%;
+    height: 600px;
+}
+.card img{
+    width: 100%;
+    height: 300px;
+}
+.rectangle {
+    background-color: orange;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+.footer{
+    background-color: cadetblue;
+}
+.back a{
+    color: black;
+}

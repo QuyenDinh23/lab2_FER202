@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login Form</title>
+        <link
+            rel="stylesheet"
+            href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+        />
+        <style>
+            body,
+            html {
+                height: 100%;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #f8f9fa; /* Background color */
+            }
+            .login-card {
+                width: 100%;
+                max-width: 400px;
+                padding: 2rem;
+                box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+                border: none;
+            }
+            .form-control {
+                border-radius: 0.25rem;
+            }
+            .btn-block {
+                border-radius: 0.25rem;
+            }
+            .login-card h3 {
+                margin-bottom: 1.5rem;
+            }
+            .btn-register {
+                margin-top: 1rem;
+                background-color: #6c757d;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card login-card">
+            <div class="card-body">
+                <h3 class="card-title text-center">Login</h3>
+                <form>
+                    <div class="form-group">
+                        <label>User name</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Enter username"
+                            id="username"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input
+                            type="password"
+                            class="form-control"
+                            placeholder="Enter password"
+                            id="password"
+                            required
+                        />
+                        <span class="mess" style="color: red"></span>
+                    </div>
+                    <button
+                        onclick="login()"
+                        type="button"
+                        class="btn btn-primary btn-block"
+                    >
+                        Login
+                    </button>
+                    <button
+                        onclick="register()"
+                        type="button"
+                        class="btn btn-secondary btn-block btn-register"
+                    >
+                        Register
+                    </button>
+                </form>
+            </div>
+        </div>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="login.js"></script>
+    </body>
+</html>
